@@ -1,6 +1,7 @@
 ###AWS Data Lake with Apache Kafka Integration
 
 ##Project Overview
+
 This repository demonstrates a scalable data pipeline leveraging Apache Kafka for real-time data streaming and AWS services for data processing, storage, and analysis. The architecture is designed to handle large volumes of streaming data efficiently and securely, utilizing modern cloud-native technologies.
 
 ##Architecture Components
