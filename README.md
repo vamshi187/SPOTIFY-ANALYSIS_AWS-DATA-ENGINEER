@@ -1,8 +1,11 @@
-AWS Data Lake with Apache Kafka Integration
-Project Overview
+###AWS Data Lake with Apache Kafka Integration
+
+##Project Overview
 This repository demonstrates a scalable data pipeline leveraging Apache Kafka for real-time data streaming and AWS services for data processing, storage, and analysis. The architecture is designed to handle large volumes of streaming data efficiently and securely, utilizing modern cloud-native technologies.
 
-Architecture Components
+##Architecture Components
+
+[https://github.com/vamshi187/SPOTIFY-ANALYSIS_AWS-DATA-ENGINEER/blob/main/AWS_Architecture.png]
 
 1. Producer
 The producer generates data and sends it to Kafka for processing. This data can come from various sources like applications, sensors, or transactional systems.
@@ -24,23 +27,27 @@ Athena enables serverless querying of data stored in the Data Lake using standar
 9. CloudWatch
 Amazon CloudWatch is used to monitor the pipeline's performance, track logs, and send alerts in case of anomalies or failures.
 
-Key Features
+##Key Features
+
 Real-time Data Processing: Apache Kafka enables real-time data streaming, ensuring timely data ingestion and processing.
 Scalable Architecture: AWS S3 serves as both the staging layer and the Data Lake, offering virtually unlimited storage capacity.
 Serverless Querying: Using Athena allows querying without managing databases, saving operational overhead.
 Automated Data Cataloging: AWS Glue and Crawlers automate the process of cataloging data, ensuring that new data is readily available for analytics.
 
-How to Run the Project
+##How to Run the Project
+
 Set up a Kafka producer to simulate real-time data ingestion.
 Use AWS S3 for the staging and final data storage.
 Configure AWS Glue for ETL operations and data transformations.
 Enable AWS Glue Crawlers to catalog your data automatically.
 Run SQL queries on your data in Athena for analysis.
 
-Prerequisites
+##Prerequisites
+
 Apache Kafka: A basic understanding of Kafka and a running Kafka cluster.
 AWS Account: Access to AWS services such as S3, Glue, Athena, and CloudWatch.
 
-Conclusion
+##Conclusion
+
 This project demonstrates how Kafka and AWS services can be combined to build a robust, scalable, and real-time data pipeline for handling large volumes of data efficiently. The architecture leverages cloud-native solutions for processing and querying data at scale, making it ideal for modern data engineering applications.
 
