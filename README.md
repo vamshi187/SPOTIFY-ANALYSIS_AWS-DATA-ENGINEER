@@ -9,23 +9,39 @@ This repository demonstrates a scalable data pipeline leveraging Apache Kafka fo
 ![AWS_Architecture](https://github.com/user-attachments/assets/eaa85fc8-8971-4172-a32a-928f7bb4adfc)
 
 1. Producer
+   
 The producer generates data and sends it to Kafka for processing. This data can come from various sources like applications, sensors, or transactional systems.
-2. Kafka
+3. Kafka
+
 Apache Kafka is the core messaging system used for managing real-time data streams. It ensures high throughput, fault tolerance, and scalability.
 Kafka handles message brokering, allowing the producer to send messages which are then consumed downstream for further processing.
-3. Consumer
+
+4. Consumer
+
 Kafka consumers pull the messages from Kafka topics and send them to the Staging Layer for further processing and temporary storage.
-4. Staging Layer (S3)
+
+5. Staging Layer (S3)
+   
 This is an intermediate layer built on AWS S3, where data is initially stored before being processed. It acts as a buffer zone to handle temporary storage of incoming data.
-5. Data Lake (S3)
+
+7. Data Lake (S3)
+
 The final destination for all processed data, the Data Lake (also in AWS S3) stores structured, semi-structured, and unstructured data. This scalable storage solution supports data ingestion from various sources.
-6. AWS Glue
+
+8. AWS Glue
+   
 AWS Glue is utilized for cataloging and transforming the data in the Data Lake. It performs ETL (Extract, Transform, Load) operations to make the data ready for querying and analytics.
-7. AWS Glue Crawler
+
+10. AWS Glue Crawler
+    
 The Crawler automatically scans the data in the Data Lake and creates metadata for efficient querying in Amazon Athena.
-8. Amazon Athena
+
+12. Amazon Athena
+    
 Athena enables serverless querying of data stored in the Data Lake using standard SQL. It allows you to run queries directly on your data without needing complex ETL pipelines or databases.
-9. CloudWatch
+
+14. CloudWatch
+    
 Amazon CloudWatch is used to monitor the pipeline's performance, track logs, and send alerts in case of anomalies or failures.
 
 ##Key Features
