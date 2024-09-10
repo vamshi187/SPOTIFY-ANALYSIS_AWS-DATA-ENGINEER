@@ -5,7 +5,7 @@ This repository demonstrates a scalable data pipeline leveraging Apache Kafka fo
 
 ##Architecture Components
 
-[https://github.com/vamshi187/SPOTIFY-ANALYSIS_AWS-DATA-ENGINEER/blob/main/AWS_Architecture.png]
+![AWS_Architecture](https://github.com/user-attachments/assets/eaa85fc8-8971-4172-a32a-928f7bb4adfc)
 
 1. Producer
 The producer generates data and sends it to Kafka for processing. This data can come from various sources like applications, sensors, or transactional systems.
